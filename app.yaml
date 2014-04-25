@@ -1,0 +1,26 @@
+application: gae-static
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+# index files
+handlers:
+- url: /(.+)/
+  static_files: www/\1/index.html
+  upload: www/(.+)/index.html
+
+# site root
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+# For folders without trailing slashes - ideally a 301 redirect, but we're static & it isn't 2004
+- url: /([^\.]+)([^/])
+  static_files: www/\1\2/index.html
+  upload: www/(.+)
+
+# Redirect Everything else
+- url: /(.+)
+  static_files: www/\1
+  upload: www/(.+)
