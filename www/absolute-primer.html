@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <title>Google App Engine Static Website Absolute Primer</title>
+  </head>
+
+  <body>
+		<h1>Absolute Primer Guide - Your First Google Cloud Site</h1>
+		<p class="intro"><img src="/assets/gae.png" class="gae-logo"/>
+			This is a demo of serving a purely static website with Google App Engine on <a href="https://cloud.google.com/" target="_new">Google Cloud Platform</a>. It was created without a single line of a programming code and without fiddling with a command line - perfect for designers and rapid prototyping! 
+			<br /><br />
+			Google App Engine is now a great hosting solution for simple websites as well as extremely complex applications. Visit the <a href="https://github.com/blainegarrett/gae-static" target="_new">gae-static</a> Github project to easily download the sample code to start your own static website. 
+		</p>
+
+		<h2>Project Highlights of gae-static</h2>
+		<ul>
+			<li>Host assets (html, css, js, images, etc) anywhere in your site folder structure like normal web hosting</li>
+			<li>Your directory roots serves up index.html files</li>
+			<li>Does not require any knowledge of programming languages to get your site up an running</li>
+			<li>Does not require to fiddle with the command line to deploy to Google Cloud.</li>
+			<li>Easily develop your website on your own machine and deploy to Google Cloud.</li>
+		</ul>
+		
+		<h2>Getting Started</h2>
+		<p>
+			To get started creating your first website, check out the <a href="/absolute-primer.html">Absolute Primer Guide</a>, which will take you through getting set up on Google Cloud Platform and Deploying your site.<br /><br />
+			If you run into snags, check out the <a href="http://stackoverflow.com/questions/tagged/google-app-engine" target="_new">Google App Engine channel on Stack Overflow</a>. If you experience troubles with this tutorial or with the files you serve, feel free to create an issue on our Github project.
+		</p>
+		
+		<p>
+			There are a couple steps to get your site on Google Cloud, but here is a thorough how-to for beginners.
+		</p>
+
+		<h3>Step 1: Download gae-static</h3>
+		<ol>
+			<li>Go to the <a href="https://github.com/blainegarrett/gae-static" target="_new">gae-static project page</a> on Github and download the ZIP. There should be a big button on the lower right column. Here is a <a href="https://github.com/blainegarrett/gae-static/archive/master.zip" target="_new">direct link</a> as well.</li>
+			<li>Unzip this file and remember where unzipped it to.</li>
+		</ol>
+
+		<h3>Step 2: Setting up your Google Cloud Account</h3>
+		<ol>
+			<li>Go to <a href="https://console.developers.google.com/">Google Cloud Developer Console</a> and create a new project.</li>
+			<li>Enter a <b>Project Name</b> like <em>My Cool Website</em> and select an Project Id. Write this down, you'll need it in later steps. We'll use <em>mycoolsite</em> through the rest of this how-to.</li>
+			<li>Once you create your application (you may need to refresh the page to see it listed), click on its name (e.g. <em>My Cool Website</em>). Ensure "App Engine" is listed in the column on the left</li>
+			<li>You now have a website! You can view it at http://<em>mycoolsite</em>.appspot.com/ - You should see an error page with <em>The requested URL / was not found on this server.</em>. That is because we need to put your website there yet!
+		</ol>
+
+		<h3>Step 3: Creating Your Static Website</h3>
+		<p>Now that you are set up on Google Cloud Platform, lets get some content up there to serve</p>
+		<ol>
+			<li><a href="https://developers.google.com/appengine/downloads">Download and install the Google Appengine SDK</a> - Pick the Python version since you won't be writing code - just be sure to pick your correct operating system.</li>
+			<li>Once Installed, run the SDK (AppengineLauncher on Mac) and create a new project in the file menu. When asked for your <b>Application Id</b>, enter the Project Id you used above (e.g <em>mycoolsite</em>)</li>
+			<li>This will now create a folder named <em>mycoolsite</em> wherever you selected it to live.</li>
+			<li>Next, open the contents of <em>gae-static</em> folder from Step 1</li>
+			<li>Copy the <b>www</b> folder from the unzipped <em>gae-static</em> to the <em>mycoolsite</em> folder</li>
+			<li>Copy the <b>app.yaml</b> file from the unzipped <em>gae-static</em> to the <em>mycoolsite</em> folder</li>
+			<li>Next open the <b>app.yaml</b> in your favorite text editor. Change the first line to <b>application: <em>mycoolsite</em></b> from <b>application: gae-static</b></li>
+			<li>In the SDK program, click on <b>Run</b>. After a few seconds, you should be able to then click "Browse" which will open up a new browser window with your application in it.</li>
+			<li>You should see a page with "Hello World - gae-static Project Demo" at the top of the page</li>
+			<li>If so, you're almost done!</li>
+			<li>Click <b>Deploy</b> in the SDK program. You'll need to enter the username and password you used when you set up your application on Google Cloud Platform.</li>
+			<li>Go to your brand new website at http://<em>mycoolsite</em>.appspot.com/</li>
+		</ol>
+
+  </body>
+</html>
