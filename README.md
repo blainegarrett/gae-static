@@ -25,6 +25,7 @@ Experience other issues? Have requests? Feel free to [file a ticket](https://git
 * [gae-static.appspot.com](http://gae-static.appspot.com) - Vanilla install of the gae-static project with documentation
 * [blaineandkatie.com](http://blaineandkatie.com) - Blaine and Katie Garrett's wedding website
 * [karnakgallery.com](http://karnakgallery.com) - Promotional site for the "All Over The Walls" documentary by Blue Bridge Media
+* [antistarband.com](http://antistarband.com) - Website for Midwest hard rock band Antistar 
 
 If you have a website that utilizes GAE Static, please message ([@blainegarrett](https://twitter.com/blainegarrett)) and we'll add it to the list.
 
