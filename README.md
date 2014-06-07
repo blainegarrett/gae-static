@@ -1,6 +1,6 @@
 # GAE-Static: Hosting on Google Cloud Made Simple
 
-A simple base project starter for static websites on Google AppEngine &amp; Google Cloud Services. See [gae-static.appspot.com](http://gae-static.appspot.com) for full documentation and examples or visit (the project page on github)[https://github.com/blainegarrett/gae-static].
+A simple base project starter for static websites on Google AppEngine &amp; Google Cloud Services. See [gae-static.appspot.com](http://gae-static.appspot.com) for full documentation and examples or visit [the project page on github](https://github.com/blainegarrett/gae-static).
 
 ### Installation Instructions and Getting Started
 See the [project homepage](http://gae-static.appspot.com/) for an overview and [absolute primer guide](http://gae-static.appspot.com/absolute-primer.html).
