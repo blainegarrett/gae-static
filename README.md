@@ -31,3 +31,8 @@ If you have a website that utilizes GAE Static, please message ([@blainegarrett]
 
 ## Contribution Notes
 This project was started by Blaine Garrett ([website](http://blainegarrett.com)). If you would like to contribute to this project, feel free to make pull requests against it and tag Github user @blainegarrett
+
+## Additional Notes and Resources
+* [Dead Simple App Engine Static Hosting](http://gusclass.com/blog/2013/09/27/dead-simple-app-engine-static-hosting/) by [Gus Class](http://gusclass.com/) - Addresses the "naked" folder redirect
+* [Free Static Page Hosting on Google Appengine in 5 minutes](http://www.fizerkhan.com/blog/posts/Free-Static-Page-Hosting-on-Google-App-Engine-in-a-5-minutes.html) A similar solution with more prescribed directory structure. Includes skip files directive for common files
+* [Implementing a static website in Google App Engine](http://www.enkisoftware.com/devlogpost-20130823-1-Implementing_a_static_website_in_Google_App_Engine.html) Another very specific solution. Addresses custom error pages.
